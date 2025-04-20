@@ -1,0 +1,119 @@
+/* Reset & Base Styling */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #121212;
+  color: #e0e0e0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  padding: 20px;
+}
+
+/* Header */
+header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+#pageheading {
+  font-size: 2.8rem;
+  color: #00ffcc;
+  margin-bottom: 10px;
+}
+
+.subtitle {
+  color: #bbbbbb;
+  font-size: 1.2rem;
+}
+
+/* Section Containers */
+section {
+  background-color: #1f1f1f;
+  border: 1px solid #333;
+  border-radius: 12px;
+  padding: 20px;
+  margin-bottom: 40px;
+  box-shadow: 0 0 15px rgba(0, 255, 170, 0.1);
+}
+
+h2 {
+  color: #00ffaa;
+  border-bottom: 2px solid #00ffaa;
+  margin-bottom: 10px;
+  padding-bottom: 5px;
+}
+
+p,
+li {
+  color: #e0e0e0;
+}
+
+/* Skills Section */
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin-top: 15px;
+}
+
+.skills div {
+  flex: 1;
+  min-width: 200px;
+}
+
+.skills ul {
+  list-style: none;
+  padding-left: 10px;
+}
+
+.skills li::before {
+  content: "✔ ";
+  color: #00ffaa;
+}
+
+/* Project Section */
+.projects ul {
+  list-style: square inside;
+  padding-left: 20px;
+}
+
+.projects li {
+  color: #ffa726;
+  margin-bottom: 6px;
+}
+
+/* Contact Section */
+.contact a {
+  color: #29b6f6;
+  text-decoration: none;
+  font-weight: bold;
+}
+.contact a:hover {
+  text-decoration: underline;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  margin-top: 50px;
+  color: #999;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .skills {
+    flex-direction: column;
+  }
+
+  body {
+    padding: 10px;
+  }
+
+  #pageheading {
+    font-size: 2rem;
+  }
+}

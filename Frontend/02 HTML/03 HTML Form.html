@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register Form</title>
+    <style>
+        body {
+            background-color: black;
+            color: aliceblue;
+            font-family: Arial, sans-serif;
+        }
+    </style>
+</head>
+<body>
+
+    <form id="registerForm">
+        <label for="fname">
+            First Name:
+            <input type="text" id="fname" placeholder="Enter your First Name">
+        </label>
+        <br><br>
+        <label for="lname">
+            Last Name:
+            <input type="text" id="lname" placeholder="Enter your Last Name">
+        </label>
+        <br><br>
+        <button type="submit">Show Message</button>
+        <br><br>
+    </form>
+
+    <h1 id="greeting"></h1>
+
+    <script>
+        document.getElementById('registerForm').addEventListener('submit', function(e) {
+            e.preventDefault(); // prevent the form from reloading the page
+
+            const fname = document.getElementById('fname').value;
+            const lname = document.getElementById('lname').value;
+
+            const greeting = document.getElementById('greeting');
+            greeting.textContent = `Hello ${fname} ${lname}`;
+        });
+    </script>
+    
+</body>
+</html>

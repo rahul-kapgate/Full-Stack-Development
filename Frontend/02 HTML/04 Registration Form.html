@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Registration Form</title>
+</head>
+<body>
+
+  <h2>Registration Form</h2>
+  <form action="/submit" method="POST">
+    
+    <!-- Name -->
+    <label for="name">Full Name:</label><br>
+    <input type="text" id="name" name="name" required minlength="3" maxlength="50" placeholder="Enter your name"><br><br>
+    
+    <!-- Email -->
+    <label for="email">Email:</label><br>
+    <input type="email" id="email" name="email" required placeholder="example@domain.com"><br><br>
+    
+    <!-- Password -->
+    <label for="password">Password:</label><br>
+    <input type="password" id="password" name="password" required minlength="6" placeholder="At least 6 characters"><br><br>
+    
+    <!-- Age -->
+    <label for="age">Age:</label><br>
+    <input type="number" id="age" name="age" min="18" max="100" required><br><br>
+    
+    <!-- Gender -->
+    <label>Gender:</label><br>
+    <input type="radio" id="male" name="gender" value="male" required>
+    <label for="male">Male</label>
+    
+    <input type="radio" id="female" name="gender" value="female">
+    <label for="female">Female</label><br><br>
+    
+    <!-- Country -->
+    <label for="country">Country:</label><br>
+    <select id="country" name="country" required>
+      <option value="">--Select--</option>
+      <option value="india">India</option>
+      <option value="usa">USA</option>
+      <option value="uk">UK</option>
+    </select><br><br>
+    
+    <!-- Bio -->
+    <label for="bio">Short Bio:</label><br>
+    <textarea id="bio" name="bio" rows="4" cols="40" maxlength="200" placeholder="Tell us about yourself..."></textarea><br><br>
+    
+    <!-- Submit Button -->
+    <input type="submit" value="Register">
+    <input type="reset" value="Reset">
+
+  </form>
+
+</body>
+</html>

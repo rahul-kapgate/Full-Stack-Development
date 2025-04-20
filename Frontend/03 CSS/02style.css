@@ -1,0 +1,24 @@
+.contanier {
+    background: red;
+    width: 700px;
+    height: 500px;
+    margin: 100px;
+    display: flex;
+    flex-direction: row;
+    /* justify-content: center;
+    align-items: center; */
+    /* flex-wrap: wrap; */
+    /* align-content: center; */
+}
+
+body {
+    background: #000;
+    color: #fff;
+}
+
+.box {
+    background: green;
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+}
